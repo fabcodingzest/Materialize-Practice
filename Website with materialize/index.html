@@ -32,18 +32,22 @@
         padding-top: 4vw;
         padding-bottom: 4vw;
       }
-      .responsive-img {
-        object-fit: contain;
-        height: 100%;
-        align-items: center;
+       .tabs .indicator{
+      background-color: #1a237e;
       }
-      .img-center {
-        width: inherit;
-        height: inherit;
-        display: flex;
-        overflow-x: auto;
-        overflow-y: hidden;
-        -webkit-overflow-scrolling: touch;
+      .tabs .tab a:focus, .tabs .tab a:focus.active{
+        background: transparent;
+      }
+
+      @media screen and (max-width: 1250px) {
+        .photos-heading {
+          margin-top: 0;
+        }
+      }
+      @media screen and (max-width: 992px) {
+        .photos-heading {
+          margin-top: 2.3733333333rem;
+        }
       }
       @media screen and (max-width: 670px) {
         header {
@@ -78,7 +82,7 @@
     <!-- photo / grid -->
     <section class="container section" id="photos">
       <div class="row">
-        <div class="col s12 l4 img-center">
+        <div class="col s12 l4">
           <img
             src="img/portrait.jpg"
             alt=""
@@ -86,7 +90,7 @@
           />
         </div>
         <div class="col s12 l6 offset-l1">
-          <h2 class="indigo-text text-darken-4">Potraits</h2>
+          <h2 class="indigo-text text-darken-4 photos-heading">Potraits</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
             quidem officiis vitae sint consectetur rem recusandae sapiente.
@@ -94,11 +98,11 @@
         </div>
       </div>
       <div class="row">
-        <div class="col s12 l4 img-center push-l7 offset-l1">
+        <div class="col s12 l4 push-l7 offset-l1">
           <img src="img/city.jpg" alt="" class="responsive-img materialboxed" />
         </div>
         <div class="col s12 l6 pull-l5 right-align offset-l1">
-          <h2 class="indigo-text text-darken-4">City</h2>
+          <h2 class="indigo-text text-darken-4 photos-heading">City</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
             quidem officiis vitae sint consectetur rem recusandae sapiente.
@@ -106,7 +110,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col s12 l4 img-center">
+        <div class="col s12 l4">
           <img
             src="img/nature.jpg"
             alt=""
@@ -114,7 +118,7 @@
           />
         </div>
         <div class="col s12 l6 offset-l1">
-          <h2 class="indigo-text text-darken-4">Nature</h2>
+          <h2 class="indigo-text text-darken-4 photos-heading">Nature</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
             quidem officiis vitae sint consectetur rem recusandae sapiente.
@@ -124,12 +128,78 @@
     </section>
 
     <!-- parallax -->
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="img/street.jpg" alt="stars image" class="responsive-img" />
+      </div>
+    </div>
 
     <!-- services / tabs -->
+    <section class="section container" id="services">
+    <div class="row">
+      <div class="col s12 l4">
+        <h2 class="indigo-text text-darken-4">What I do..</h2>
+        <p>Ipsum dolor sit amet consectetur adipisicing elit. Ipsum consectetur eligendi officia excepturi rem illo minus est laboriosam a quos, aut odit totam quasi. Exercitationem aperiam reprehenderit odio in laboriosam!.</p>
+        <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.</p>
+      </div>
+      <div class="col s12 l6 offset-l2">
+        <!-- tabs -->
+        <ul class="tabs">
+          <li class="tab col s6">
+            <a href="#photography" class="active indigo-text text-darken-4">Photography</a>
+          </li>
+          <li class="tab col s6">
+            <a href="#editing" class="indigo-text text-darken-4">Editing</a>
+          </li>
+        </ul>
+        <div id="photography" class="col s12">
+            <p class="flow-text indigo-text text-darken-4">Photography</p>
+            <p>Dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+            <p>Augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.</p>
+        </div>
+        <div id="editing" class="col s12">
+            <p class="flow-text indigo-text text-darken-4">Editing</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+            <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
     <!-- parallax -->
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="img/stars.jpg" alt="stars image" class="responsive-img" />
+      </div>
+    </div>
 
     <!-- contact form -->
+    <section class="section container" id="contact">
+      <div class="row">
+        <div class="col s12 l5">
+          <h2 class="indigo-text text-darken-4">Get In Touch</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad repellendus sequi illum, esse magnam mollitia aut fugiat magni exp.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad repellendus sequi illum, esse magnam mollitia aut fugiat magni exp.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad repellendus sequi illum, esse magnam mollitia aut fugiat magni exp.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad repellendus sequi illum, esse magnam mollitia aut fugiat magni exp.</p>
+        </div>
+        <div class="col s12 l5 offset-l2">
+          <form action="">
+            <div class="input-field">
+              <i class="material-icons prefix">email</i>
+              <input type="email" id="email">
+              <label for="email">Your Email</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">message</i>
+              <textarea id="message" class="materialize-textarea"></textarea>
+              <label for="message">Your Message</label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
 
     <!-- footer -->
 
@@ -140,6 +210,8 @@
       $(document).ready(function () {
         $('.sidenav').sidenav();
         $('.materialboxed').materialbox();
+        $('.parallax').parallax();
+        $('.tabs').tabs();
       });
     </script>
   </body>
