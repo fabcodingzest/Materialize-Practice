@@ -34,6 +34,10 @@
         top: 10px;
         right: 28px;
       } */
+      .user-style {
+        display: flex;
+        justify-content: space-between;
+      }
     </style>
     <title>Materialize CSS</title>
   </head>
@@ -321,12 +325,58 @@
       </div>
     </div> -->
 
+    <nav>
+      <a href="#" data-target="slide-out" class="sidenav-trigger"
+        ><i class="material-icons">menu</i></a
+      >
+      <div class="container">
+        <a href="#" class="p">
+          <i class="material-icons">import_contacts</i>
+        </a>
+      </div>
+    </nav>
+
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+      <li>
+        <div class="user-view user-style">
+          <div class="background">
+            <img
+              src="https://blog.matcharesident.com/wp-content/uploads/2019/07/iStock-944453634.jpg"
+              class="responsive-img"
+            />
+          </div>
+
+          <div>
+            <a href="#user"
+              ><img
+                class="circle responsive-img"
+                src="https://www.wealthysinglemommy.com/wp-content/uploads/2018/10/how-to-become-a-code-1024x683.jpg"
+            /></a>
+            <a href="#name"><span class="white-text name">John Doe</span></a>
+            <a href="#email"
+              ><span class="white-text email">jdandturk@gmail.com</span></a
+            >
+          </div>
+          <i class="material-icons sidenav-close white-text hide-on-large-only"
+            >clear</i
+          >
+        </div>
+      </li>
+      <li>
+        <a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a>
+      </li>
+      <li><a href="#!">Second Link</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader">Subheader</a></li>
+      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+    </ul>
+
     <!-- Compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
       $(document).ready(function () {
-        // $('.sidenav').sidenav();
+        $('.sidenav').sidenav();
         $('.modal').modal();
       });
     </script>
